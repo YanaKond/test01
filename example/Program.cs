@@ -23,3 +23,17 @@ foreach (string s in array)
         count++;
     }
 }
+
+string [] NewArray = new string[count];
+int index = 0;
+foreach (string s in array)
+{
+    if (s.Length <= 3)
+    {
+        NewArray[index] = s;
+        index++;
+    }
+}
+
+Console.Write("Новый массив: ");
+Console.WriteLine(string.Join(", ", NewArray));
