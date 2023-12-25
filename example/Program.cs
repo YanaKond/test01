@@ -14,3 +14,12 @@ for (int i = 0; i < array.Length; i++)
 }
 Console.Write("Первоначальный массив: ");
 Console.WriteLine(string.Join(", ", array));
+
+int count = 0;
+foreach (string s in array)
+{
+    if (s.Length <= 3)
+    {
+        count++;
+    }
+}
